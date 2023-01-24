@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter Tight", sans-serif;
+}
+.shop-now {
+  cursor: pointer;
+}
+.shop-now:hover * {
+  color: gray;
+  stroke: gray;
+}
+.nav-btns svg {
+  height: 40px;
+}
+.nav-btns div {
+  cursor: pointer;
+}
+.nav-btns div:hover svg {
+  stroke: gray;
+}
+nav p {
+  height: 28px;
+}
+nav p:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
