@@ -1,23 +1,27 @@
 import { useState } from "react";
-
+import img1 from "./images/desktop-image-hero-1.jpg";
+import img2 from "./images/desktop-image-hero-2.jpg";
+import img3 from "./images/desktop-image-hero-3.jpg";
+import imgfooter1 from "./images/image-about-dark.jpg";
+import imgfooter2 from "./images/image-about-light.jpg";
 function App() {
   const items = [
     {
-      img: "desktop-image-hero-1.jpg",
+      img: img1,
       h1: "Discover innovative ways to decorate",
       p: `We provide unmatched quality, comfort, and style for property owners across the country. 
       Our experts combine form and function in bringing your vision to life. Create a room in your 
       own style with our collection and make your property a reflection of you and what you love.`,
     },
     {
-      img: "desktop-image-hero-2.jpg",
+      img: img2,
       h1: "We are available all across the globe",
       p: `With stores all over the world, it's easy for you to find furniture for your home or place of business. 
       Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
       store locator. Any questions? Don't hesitate to contact us today.`,
     },
     {
-      img: "desktop-image-hero-3.jpg",
+      img: img3,
       h1: "Manufactured with the best materials",
       p: `Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
       to ensure that every product is made as perfect and as consistent as possible. With three decades of 
@@ -50,11 +54,7 @@ function App() {
               <p className="font-semibold">contact</p>
             </div>
           </nav>
-          <img
-            style={{ height: "650px" }}
-            src={`./images/${items[turn].img}`}
-            alt=""
-          />
+          <img style={{ height: "650px" }} src={items[turn].img} alt="" />
           <div
             style={{ width: "100%" }}
             className="flex justify-center relative items-center"
@@ -131,11 +131,7 @@ function App() {
           </div>
         </div>
         <div className="main-footer flex">
-          <img
-            style={{ height: "277px" }}
-            src="../images/image-about-dark.jpg"
-            alt=""
-          />
+          <img style={{ height: "277px" }} src={imgfooter1} alt="" />
           <div
             style={{ flex: 1 }}
             className="about-div flex flex-col justify-center"
@@ -158,7 +154,7 @@ function App() {
               </p>
             </div>
           </div>
-          <img src="../images/image-about-light.jpg" alt="" />
+          <img src={imgfooter2} alt="" />
         </div>
       </div>
     </div>
