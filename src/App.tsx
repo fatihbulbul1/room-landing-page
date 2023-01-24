@@ -52,7 +52,7 @@ function App() {
           </nav>
           <img
             style={{ height: "650px" }}
-            src={`../images/${items[turn].img}`}
+            src={`./images/${items[turn].img}`}
             alt=""
           />
           <div
